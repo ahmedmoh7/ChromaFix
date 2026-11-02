@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "com.chromafix.app"
     compileSdk = 35
-    defaultConfig {
+    compileOptions {\n        sourceCompatibility = JavaVersion.VERSION_17\n        targetCompatibility = JavaVersion.VERSION_17\n    }\n    kotlinOptions { jvmTarget = "17" }\n    defaultConfig {
         applicationId = "com.chromafix.app"
         minSdk = 24
         targetSdk = 35
